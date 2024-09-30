@@ -14,7 +14,7 @@ Este código a sido creado con ayuda de ChatGPT, demostrando que un joven con no
 - Interfaz de usuario intuitiva.
 - Responsivo.
 
-##Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - HTML
 - CSS
