@@ -14,6 +14,12 @@ Este código a sido creado con ayuda de ChatGPT, demostrando que un joven con no
 - Interfaz de usuario intuitiva.
 - Responsivo.
 
+##Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
 ## Instalación
 
 1. Clona este repositorio o descarga los archivos directamente.
