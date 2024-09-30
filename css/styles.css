@@ -1,0 +1,176 @@
+/* Reset básico para quitar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-image: url('/galery/background.jpg'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 0.8682rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%; /* Navbar ocupará todo el ancho de la pantalla */
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    z-index: 1000; /* Asegura que el navbar esté sobre el contenido */
+    backdrop-filter: blur(5px);
+}
+
+/* Alineación y estilo de los elementos dentro del navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    padding-right: 17px;
+    display: flex;
+    justify-content: flex-end; /* Mantiene el contenido a la derecha */
+    width: 100%; /* Esto hace que el UL ocupe todo el ancho del navbar */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Efecto hover */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Query para pantallas pequeñas (menos de 800px) */
+@media (max-width: 800px) {
+    /* Ocultar la lista de enlaces por defecto */
+    nav ul {
+        display: none;
+        flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+        backdrop-filter: blur(5px); /* Fondo oscuro para el menú desplegable */
+        position: absolute;
+        top: 100%; /* Justo debajo del navbar */
+        right: 0;
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+
+    /* Mostrar el icono del menú hamburguesa */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Estilo para mostrar el menú cuando esté activo */
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Ajuste del navbar cuando esté desplegado */
+    nav ul li {
+        margin: 15px 0; /* Espaciado vertical en lugar horizontal */
+        text-align: right;
+        
+    }
+}
+
+/* Portada */
+.portada {
+    height: 100vh; /* La portada ocupará toda la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.portada h1 {
+    font-size: 3rem;
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    margin-bottom: 20px;
+}
+
+/* Sign Up */
+#signup {
+    color: white;
+    width: 400px;
+    height: 350px;
+    display: grid;
+    place-items: center; 
+    backdrop-filter: blur(5px);
+    text-align: center;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 10%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+#signup:hover {
+    box-shadow: 0 12px 19px rgba(0, 0, 0, 0.5);
+}
+
+#div-section-signup{
+    margin: 0;
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Usa flexbox para centrar el contenedor */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form input {
+    color: white;
+    background: local;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background: local;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    box-shadow: 15px;
+    background-color: rgba(201, 201, 201, 0.3);
+
+}
